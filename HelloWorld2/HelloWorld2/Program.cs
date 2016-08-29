@@ -14,7 +14,8 @@ namespace HelloWorld2
             ConsoleKeyInfo cki;
             // Prevent example from ending if CTL+C is pressed.
             Console.TreatControlCAsInput = true;
-
+            // false mean CTRL+C is quit keyword.
+            Console.WriteLine("Hello World!");
             Console.WriteLine("Press any combination of CTL, ALT, and SHIFT, and a console key.");
             Console.WriteLine("Press the Escape (Esc) key to quit: \n");
             do
