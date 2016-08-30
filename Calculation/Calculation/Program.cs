@@ -9,9 +9,26 @@ namespace Calculation
     {
         static void Main(string[] args)
         {
-            int x = 1;
-            int y = x + 7;
-            Console.WriteLine(y);
+            int a = 2;
+            int b = 5;
+            /* Addition */
+            int add = b + a;
+
+            /* Subtraction */
+            int sub = b - a;
+
+            /* Multiplication */
+            int mul = b * a;
+
+            /* Division */
+            double div = b % a;
+
+            Console.WriteLine("a = {0}", a);
+            Console.WriteLine("b = {0}", b);
+            Console.WriteLine("Addition: a + b = {0}",add);
+            Console.WriteLine("Subtraction: b - a = {0}", sub);
+            Console.WriteLine("Multiplication: b * a = {0}", mul);
+            Console.WriteLine("Division: b % a = {0}", div);
             Console.ReadLine();
         }
     }
