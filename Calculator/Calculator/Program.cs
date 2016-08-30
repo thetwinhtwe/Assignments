@@ -13,15 +13,13 @@ namespace Calculator
             ConsoleKeyInfo operation;
             //Console.TreatControlCAsInput = true;
             int add, sub, mul;
+            int num1, num2;
             float div;
-            //do{
                 Console.WriteLine("\nEnter First Number");
-                int num1;
-                num1 = Convert.ToInt32(Console.ReadLine());
+            num1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("\nEnter Second Number");
-                int num2;
                 num2 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\nChoose Operation Type \n [a] to Addition \n [s] to Subtraction \n [m] to Multiplication \n [d] to Division \n [Other KEY] to EXIT \n");
+            Console.WriteLine("\nChoose Operation Type \n [a] to Addition \n [s] to Subtraction \n [m] to Multiplication \n [d] to Division \n [Other KEY] to EXIT \n");
                 operation = Console.ReadKey();
             switch (operation.KeyChar)
                 {
