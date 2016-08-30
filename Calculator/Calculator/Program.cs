@@ -15,41 +15,47 @@ namespace Calculator
             int add, sub, mul;
             float div;
             //do{
-                Console.WriteLine("Choose Operation Type \n [a] to Addition \n [s] to Subtraction \n [m] to Multiplication \n [d] to Division \n [ESC] to EXIT \n");
-                operation = Console.ReadKey();
                 Console.WriteLine("\nEnter First Number");
                 int num1;
                 num1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("\nEnter Second Number");
                 int num2;
                 num2 = Convert.ToInt32(Console.ReadLine());
-                switch (operation.KeyChar)
+                Console.WriteLine("\nChoose Operation Type \n [a] to Addition \n [s] to Subtraction \n [m] to Multiplication \n [d] to Division \n [Other KEY] to EXIT \n");
+                operation = Console.ReadKey();
+            switch (operation.KeyChar)
                 {
                     case 'a':
                         add = num1 + num2;
-                        Console.WriteLine("Addition: {0}", add);
-                        break;
+                        Console.WriteLine("\n Addition: {0}", add);
+                        //Console.WriteLine("Press Any Key to Exit");
+                    break;
                     case 's':
                         sub = num1 - num2;
-                        Console.WriteLine("Subtraction: {0}", sub);
-                        break;
+                        Console.WriteLine("\nSubtraction: {0}", sub);
+                        //Console.WriteLine("Press Any Key to Exit");
+                    break;
                     case 'm':
                         mul = num1 * num2;
-                        Console.WriteLine("Multiplication: {0}", mul);
-                        break;
+                        Console.WriteLine("\nMultiplication: {0}", mul);
+                       // Console.WriteLine("Press Any Key to Exit");
+                    break;
                     case 'd':
                         div = (float)num1 / num2;
-                        Console.WriteLine("Division: {0}", div);
-                        break;
+                        Console.WriteLine("\nDivision: {0}", div);
+                        
+                    break;
+                    case 'x':
+                    break;
                     default:
-                    Console.WriteLine("Type ESC to Quit");
                         break;
 
 
                 }
+            Console.WriteLine("\nPress Any Key to Exit");
             Console.ReadLine();
 
-           // } while (operation.Key != ConsoleKey.Escape);
+            //} while (operation.Key != ConsoleKey.Escape);
         }
     }
 }
