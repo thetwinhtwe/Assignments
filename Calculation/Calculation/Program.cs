@@ -21,15 +21,16 @@ namespace Calculation
             int mul = b * a;
 
             /* Division */
-            double div = b % a;
+            float div =(float) b / a;
 
             Console.WriteLine("a = {0}", a);
             Console.WriteLine("b = {0}", b);
             Console.WriteLine("Addition: a + b = {0}",add);
             Console.WriteLine("Subtraction: b - a = {0}", sub);
             Console.WriteLine("Multiplication: b * a = {0}", mul);
-            Console.WriteLine("Division: b % a = {0}", div);
-            Console.ReadLine();
+            Console.WriteLine("Division: b / a = {0}", div);
+            Console.WriteLine("Press any key to EXIT");
+            Console.ReadKey();
         }
     }
 }
