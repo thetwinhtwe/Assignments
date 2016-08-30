@@ -22,7 +22,7 @@ namespace Calculation
 
             /* Division */
             float div =(float) b / a;
-
+            Console.WriteLine("{{{---CALCULATION---}}}");
             Console.WriteLine("a = {0}", a);
             Console.WriteLine("b = {0}", b);
             Console.WriteLine("Addition: a + b = {0}",add);
