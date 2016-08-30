@@ -11,7 +11,7 @@ namespace Calculation
         {
             int x = 1;
             int y = x + 7;
-            Console.WriteLine(x);
+            Console.WriteLine(y);
             Console.ReadLine();
         }
     }
