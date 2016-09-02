@@ -10,7 +10,8 @@ namespace FruitArray
     {
         static void Main(string[] args)
         {
-            string[] fruits = { "apple", "banana", "orange" };
+            //string[] fruits = { "apple", "banana", "orange" };
+            string[] fruits = new string[] { "orange", "banana", "apple"};
 
             for (int i = 0; i < fruits.Length; i++)
             {
