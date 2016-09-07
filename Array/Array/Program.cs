@@ -10,14 +10,14 @@ namespace Array
     {
         static void Main(string[] args)
         {
-            int[] n = new int[100]; 
+            int[] num = new int[100]; 
 
             for (int i = 0; i < 100; i++)
             {
-                n[i] = i + 100;
+                num[i] = i + 100;
             }
 
-            foreach (int j in n)
+            foreach (int j in num)
             {
                 int i = j - 100;
                 Console.WriteLine("Element[{0}] = {1}", i, j);
